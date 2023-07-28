@@ -13,6 +13,7 @@ An example of how to keep multiple environments within Terraform DRY.
 └── service-01
     ├── _common
     ├── dev → the first environment
+    │   ├── aws-ami.tf
     │   ├── aws-instance.tf -> ../_common/aws-instance.tf
     │   ├── aws-vpc.tf -> ../_common/aws-vpc.tf
     │   ├── backend.tf
